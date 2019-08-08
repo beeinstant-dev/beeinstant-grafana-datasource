@@ -1,0 +1,34 @@
+{
+  "name": "BeeInstant",
+  "id": "beeinstant-datasource",
+  "type": "datasource",
+
+  "partials": {
+    "config": "public/app/plugins/datasource/beeinstant-datasource/partials/config.html"
+  },
+
+  "metrics": true,
+  "annotations": true,
+
+  "info": {
+    "description": "BeeInstant",
+    "author": {
+      "name": "Bee Instant",
+      "url": "https://beeinstant.com"
+    },
+    "logos": {
+      "small": "img/beeLogo.png",
+      "large": "img/beeLogo.png"
+    },
+    "links": [
+      {"name": "Website", "url": "https://beeinstant.com"}
+    ],
+    "version": "1.4.0",
+    "updated": "2018-06-20"
+  },
+
+  "dependencies": {
+    "grafanaVersion": "3.x.x",
+    "plugins": [ ]
+  }
+}

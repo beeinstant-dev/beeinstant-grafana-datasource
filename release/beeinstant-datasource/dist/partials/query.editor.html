@@ -1,0 +1,35 @@
+<query-editor-row query-ctrl="ctrl" class="generic-datasource-query-row" has-text-edit-mode="true" id="bee-row">
+</query-editor-row>
+<script>
+  if ($("script#beejs").length == 0 && window.beeAdded !== true) {
+    window.beeAdded = true;
+
+    var addScript = function (src, id) {
+      var script = document.createElement('script');
+      script.setAttribute("id", id);
+      script.src = src;
+      script.type = 'text/javascript';
+      $("body").append(script);
+    }
+
+    addScript('https://unpkg.com/react@16/umd/react.production.min.js', 'react-js');
+    addScript('https://unpkg.com/react-dom@16/umd/react-dom.production.min.js', 'react-dom-js');
+
+    function defer(method) {
+      if (window.React && window.ReactDOM) {
+        method();
+      } else {
+        setTimeout(function () { defer(method) }, 50);
+      }
+    }
+
+    defer(function () {
+      addScript('/public/plugins/beeinstant-datasource/bee.js', 'beejs');
+    });
+
+   
+    
+  }
+
+
+</script>
