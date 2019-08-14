@@ -79,3 +79,18 @@
 #beeCode{
   font-family: monospace;
 }
+.bee-red {
+  color: #FF0000;
+}
+
+.bee-blue {
+  color: #0000FF;
+}
+
+.bee-green {
+  color: #00FF00;
+}
+
+.hoverable:not(:hover) > .show-on-hover {
+  display: none;
+}
