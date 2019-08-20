@@ -92,5 +92,5 @@
 }
 
 .hoverable:not(:hover) > .show-on-hover {
-  display: none;
+  opacity: 0;
 }
