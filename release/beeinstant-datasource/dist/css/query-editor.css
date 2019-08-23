@@ -80,17 +80,17 @@
   font-family: monospace;
 }
 .bee-red {
-  color: #FF0000;
+  color: #C25A47;
 }
 
 .bee-blue {
-  color: #0000FF;
+  color: #4285F4;
 }
 
 .bee-green {
-  color: #00FF00;
+  color: #5EC964;
 }
 
 .hoverable:not(:hover) > .show-on-hover {
-  display: none;
+  opacity: 0;
 }
